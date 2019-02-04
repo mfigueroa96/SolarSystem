@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CEC64E902204EE4E00F22F19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEC64E8F2204EE4E00F22F19 /* main.cpp */; };
+		CEC64E982204F01700F22F19 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC64E972204F01700F22F19 /* OpenGL.framework */; };
+		CEC64E9A2204F01A00F22F19 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC64E992204F01A00F22F19 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		CEC64E8C2204EE4E00F22F19 /* SolarSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SolarSystem; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC64E8F2204EE4E00F22F19 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CEC64E972204F01700F22F19 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CEC64E992204F01A00F22F19 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC64E9A2204F01A00F22F19 /* GLUT.framework in Frameworks */,
+				CEC64E982204F01700F22F19 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				CEC64E8E2204EE4E00F22F19 /* SolarSystem */,
 				CEC64E8D2204EE4E00F22F19 /* Products */,
+				CEC64E962204F01700F22F19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				CEC64E8F2204EE4E00F22F19 /* main.cpp */,
 			);
 			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		CEC64E962204F01700F22F19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC64E992204F01A00F22F19 /* GLUT.framework */,
+				CEC64E972204F01700F22F19 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
